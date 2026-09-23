@@ -21,7 +21,7 @@ My current research interests focus on **world models**, including visual recons
 
 ## Research & Development
 
-{% include projects-list.html %}
+{% include projects-list.html collapse=true %}
 
 ## Experience
 
