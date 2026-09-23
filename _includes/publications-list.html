@@ -2,9 +2,12 @@
 {% assign publications = site.publications | sort: 'date' | reverse %}
 {% assign collapsed_papers = false %}
 {% assign earlier_papers = '/publications/cylindrical-assembly/|/publications/countersunk-assembly/|/publications/debris-sensor/' | split: '|' %}
+{% comment %}Temporarily hide the four papers listed after the arXiv paper in "more".{% endcomment %}
+{% assign hidden_papers = '/publications/cylindrical-assembly/|/publications/countersunk-assembly/|/publications/debris-sensor/|/publications/shaft-pose-sensors/' | split: '|' %}
 {% for publication in publications %}
   {% assign post = publication %}
   {% if post.permalink == '/publications/deformsmith/' %}{% continue %}{% endif %}
+  {% if hidden_papers contains post.permalink %}{% continue %}{% endif %}
   {% if earlier_papers contains post.permalink %}{% continue %}{% endif %}
   {% if post.permalink == '/publications/shaft-pose-sensors/' %}
     {% assign current_post = post %}

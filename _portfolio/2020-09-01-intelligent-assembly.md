@@ -3,7 +3,7 @@ title: Robotic Manipulation with Vision and Force Sensing for Intelligent Assemb
 date: 2020-09-01 00:00:00.000000000 +00:00
 role: Master student
 organization: "<a href='https://english.cqu.edu.cn/'>Chongqing University</a>, Chongqing, China"
-period: 2020.10 -- 2022.04
+period: 2019.10 -- 2022.04
 collection: portfolio
 permalink: "/portfolio/intelligent-assembly/"
 ---
