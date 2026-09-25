@@ -7,6 +7,7 @@ venue: arXiv
 year: 2026
 arxiv: https://arxiv.org/abs/2609.18620
 website: https://can-lee.github.io/deformsmith-web/
+code: https://github.com/CAN-Lee/DeformSmith
 collection: publications
 permalink: "/publications/deformsmith/"
 excerpt: ''
