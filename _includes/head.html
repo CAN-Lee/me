@@ -1,6 +1,18 @@
 {% include base_path %}
 
 <meta charset="utf-8">
+<!-- Keep old resume and deep links working after moving to the root site. -->
+<script>
+  if (window.location.hostname === 'can-lee.github.io' && /^\/me(?:\/|$)/.test(window.location.pathname)) {
+    window.location.replace('https://can-lee.github.io' +
+      (window.location.pathname.replace(/^\/me(?=\/|$)/, '') || '/') +
+      window.location.search + window.location.hash);
+  }
+</script>
+<noscript>
+  <meta http-equiv="refresh" content="0; url=https://can-lee.github.io{{ page.url | escape }}">
+</noscript>
+
 <meta name="robots" content="noindex, nofollow, noarchive">
 
 {% include seo.html %}
